@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Xây dựng một hàm đặt tên là calculate nhận vào ba tham số a , b có kiểu dữ liệu là số nguyên và  một callback function. 
+        Hàm calculate sẽ tính tổng của hai số a và b
+        Callback function sẽ in ra kết quả của phép tính trên
+        Lưu ý: Định nghĩa rõ kiểu dữ liệu cho các tham số và hàm
+    -->
+    <script>
+        function caculate(a,b,callback){
+            return callback(a,b);
+        }
+        console.log(caculate(1,2,(value1,value2) => value1+value2));
+    </script>
+</body>
+</html>

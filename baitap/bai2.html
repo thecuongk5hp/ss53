@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Viết một hàm delayedCallback() nhận tham số truyền vào là một callback 
+        function và một số nguyên thể hiện thời gian delay (miligiây).
+        Hàm delayedCallback() sẽ gọi callback function sau một khoảng thời gian nhất định.
+        Lưu ý: Định nghĩa rõ kiểu dữ liệu cho các tham số và hàm
+    -->
+    <script>
+    function delayedCallback(callback, delay) {
+        setTimeout(callback, delay);
+    }
+    delayedCallback(() => {
+        console.log('Callback được gọi sau 3 giây');
+    }, 3000);
+    </script>
+</body>
+</html>
